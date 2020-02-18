@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Modal from "./Modal";
+import useModal from "./useModal";
 
-function App() {
+const App = () => {
+  const { open, openModal, closeModal } = useModal();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Modals in React!</h1>
+      <button onClick={openModal}>Open</button>
+        {open ? (
+          <Modal
+            close={closeModal}
+            render={() => <h1>This is a Modal using Portals!</h1>}
+            />
+        ) : null}
     </div>
   );
-}
+};
 
-export default App;
+    export default App;
