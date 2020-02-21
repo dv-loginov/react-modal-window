@@ -1,15 +1,15 @@
 import React from "react";
 
-const TestPicture = () => {  
+const TestPicture = (props) => {  
     return (
         <svg 
             version="1.1" 
-            id="loader-1" 
+            id={props.name} 
             xmlns="http://www.w3.org/2000/svg" 
             xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="150px" 
-            height="150px" 
-            viewBox="0 0 40 40" 
+            width={`${props.width}px`} 
+            height={`${props.height}px`} 
+            viewBox='0 0 40 40' 
             enableBackground="new 0 0 40 40" 
             xmlSpace="preserve"
         >

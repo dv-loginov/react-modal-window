@@ -15,7 +15,11 @@ const App = () => {
             close={closeModal}
             render={() =>
               <>            
-               <Picture name={'test'}/>
+               <Picture 
+                  name={'test'}
+                  width={150}
+                  height={150}  
+                  />
               <h1>Сообщение</h1>
               <h3>еще текст</h3>
               </>
