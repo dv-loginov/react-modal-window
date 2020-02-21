@@ -21,7 +21,10 @@
         height: 100%;
     }
     &Window{
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background: green;
         border-radius: 1em;
         padding: 15px;
