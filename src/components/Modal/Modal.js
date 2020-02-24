@@ -1,5 +1,7 @@
 import React from "react";
 import Portal from "./Portal";
+import Button from "../../components/Button/Button";
+
 import "./Modal.scss"
 
 const Modal = ({ children, render, close}) => {
@@ -9,7 +11,7 @@ const Modal = ({ children, render, close}) => {
             <div className="ModalWrap">
                 <div className="ModalWindow">
                     {render(children) || children}
-                    <button onClick={close}>Close</button>                                      
+                    <Button id="primary" onClick={close}>Close</Button>                                      
                 </div>
             </div>       
             <div className="ModalDimmer"/>
