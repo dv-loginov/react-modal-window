@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Модальное окно demo http://dv-loginov.ru/prj/react/modal-window/index.html
+## Модальное окно 
+#demo http://dv-loginov.ru/prj/react/modal-window/index.html
 
 ## Available Scripts
 
