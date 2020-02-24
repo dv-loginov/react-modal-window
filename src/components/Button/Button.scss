@@ -1,0 +1,94 @@
+.btn {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	padding: 10px 0 11px;
+	width: 128px;
+	font-size: 16px;
+	transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+
+	&:hover {
+		box-shadow: 0 1px 6px rgba(0,0,0,.4);
+		font-weight: bold;
+		color:  rgba(0,0,0,.3);
+	}
+	
+	&:active {
+		box-shadow: 0 5px 11px rgba(0,0,0,.4);
+	}
+	
+	&:focus,
+	&:active {
+		outline: 0 !important;
+	}
+
+	&-default{
+		background-color: #a6a6a6;
+		&:hover {
+			background-color: rgba(158,158,158,0.9);
+		}
+		&:active {
+			background-color: rgba(158,158,158,0.8);
+		}
+	}
+	
+	&-error{
+		background-color: #f35448;
+		&:hover {
+			background-color: rgba(244,67,54,0.9);
+		}
+		&:active {
+			background-color: rgba(244,67,54,0.8);
+		}
+	}
+	
+	&-primary{
+		background-color: #5060bb;
+		&:hover {
+			background-color: rgba(63,81,181,0.9);
+		}
+		&:active {
+			background-color: rgba(63,81,181,0.8);
+		}
+	}
+	
+	&-success{
+		background-color: #95c75a;
+		&:hover {
+			background-color: rgba(139,195,74,0.9);
+		}
+		&:active {
+			background-color: rgba(139,195,74,0.8);
+		}
+	}
+
+	&-info{
+		background-color: #1ab0f3;
+		&:hover {
+			background-color: rgba(3,169,244,0.9);
+		}
+		&:active {
+			background-color: rgba(3,169,244,0.8);
+		}
+	}
+	
+	&-warning{
+		background-color: #fda017;
+		&:hover {
+			background-color: rgba(255,152,0,0.9);
+		}	
+		&:active {
+			background-color: rgba(255,152,0,0.8);
+		}
+	}
+
+	&-question{
+		background-color: #A2C7D6;
+		&:hover {
+			background-color: rgba(162, 199, 214,0.9);
+		}
+		&::active{
+			background-color: rgba(162, 199, 214,0.8);
+		}
+	}
+	
+}
